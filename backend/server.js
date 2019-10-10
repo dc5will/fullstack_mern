@@ -13,9 +13,8 @@ const router = express.Router();
 app.use(cors());
 
 // this is our MongoDB database
-const dbRoute =
-  'mongodb+srv://will:Password123@cluster0-cygmx.mongodb.net/test?retryWrites=true&w=majority';
-
+const dbRoute = 'mongodb+srv://will:Password123@cluster0-cygmx.mongodb.net/test?retryWrites=true&w=majority';
+  
 // connects our back end code with the database
 mongoose.connect(dbRoute, { useNewUrlParser: true });
 
